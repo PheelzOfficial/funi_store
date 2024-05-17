@@ -13,7 +13,7 @@ const expressFileUpload = require("express-fileupload")
 const app = express();
 
 mongoose
-  .connect("mongodb://localhost:27017/funi_Store")
+  .connect(process.env.mongoose)
   .then(() => {
     console.log("Connected to database");
   })
