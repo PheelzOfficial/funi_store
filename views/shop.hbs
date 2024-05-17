@@ -1,0 +1,96 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from themewagon.github.io/furni/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Apr 2024 08:50:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="/css/tiny-slider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		{{>header}}
+		<!-- End Header/Navigation -->
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Shop</h1>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+		
+
+		<div class="untree_co-section product-section before-footer-section">
+		    <div class="container">
+		      	<div class="row">
+
+		      		<!-- Start Column 1 -->
+					{{#each products}}
+					<div class="col-12 col-md-4 col-lg-3 mb-5 ">
+						<span class="product-item">
+							<a href="">
+							<img src="{{image}}" class="img-fluid product-thumbnail image-container">
+							</a>
+							<h3 class="product-title">{{title}}</h3>
+							<strong class="product-price">${{price}}</strong>
+
+							<span class="icon-cross">
+								<a href="/cart/{{_id}}" style="text-decoration: none;">
+									<img src="/images/cross.svg" class="img-fluid">
+								</a>
+							</span>
+						</span>
+					</div> 
+					{{/each}}
+					<!-- End Column 1 -->
+
+		      	</div>
+		    </div>
+		</div>
+
+
+		<!-- Start Footer Section -->
+		{{>footer}}
+		<!-- End Footer Section -->	
+
+
+		<script src="/js/bootstrap.bundle.min.js"></script>
+		<script src="/js/tiny-slider.js"></script>
+		<script src="/js/custom.js"></script>
+	</body>
+
+
+<!-- Mirrored from themewagon.github.io/furni/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Apr 2024 08:50:52 GMT -->
+</html>

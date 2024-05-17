@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="/css/tiny-slider.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+
+
+</head>
+
+<body>
+
+    {{>header}}
+
+    <div class="">
+        <div class="hero overlay inner-page bg-white-50 py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-center pt-5">
+                    <div class="col-lg-6">
+                        <h1 class="heading text-white mb-3" data-aos="fade-up">Post Product</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section search-result-wrap py-5">
+
+            <div class="container">
+                <form action="/admin/post-product" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-12">
+                            <div><label for="">Images</label></div>
+                            <div>
+                                <input type="file" class="form-control" placeholder="Blog Title" name="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div><label for="">Title</label></div>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Product Title" name="title">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div><label for="">Price</label></div>
+                            <div>
+                                <input type="number" class="form-control" placeholder="Product Price" name="price">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-lg-12">
+                            <div><label for="sectionThree">Description</label></div>
+                            <div><textarea name="description" id="" cols="30" rows="10" class="form-control"
+                                    placeholder="Product description"></textarea></div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-outline-primary ">Post</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/tiny-slider.js"></script>
+    <script src="/js/custom.js"></script>
+
+
+</body>
+
+</html>
